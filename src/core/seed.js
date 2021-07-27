@@ -8,6 +8,7 @@ const seed = {
 	refreshID: rndString(refreshIDLength),
 	rndmString: rndString(config.rndmStrLength),
 	score: 0,
+	inputString: '',
 };
 
 export default seed;

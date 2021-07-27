@@ -5,3 +5,27 @@
 		font-weight: bold;
 	}
 }
+
+.score {
+	position: absolute;
+    font-size: xx-large;
+    font-family: serif;
+    right: 10%;
+	background-color: peru;	
+}
+
+.rdnStr {
+	position: absolute;
+ 	color:brown;
+	font-size: xx-large;
+	top: 40%;
+	left: 45%;
+}
+.inpStr {
+	position: absolute;
+ 	background-color:aqua;
+	top: 50%;
+	left: 33%;
+	font-size: xx-large;
+
+}
