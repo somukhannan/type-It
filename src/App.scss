@@ -18,14 +18,36 @@
 	position: absolute;
  	color:brown;
 	font-size: xx-large;
-	top: 40%;
-	left: 45%;
+	top: 16%;
+	left: calc( 50% - 50px );
 }
 .inpStr {
 	position: absolute;
  	background-color:aqua;
-	top: 50%;
-	left: 33%;
+	top: 25%;
+	left: 37%;
 	font-size: xx-large;
+	width: 25%;
+	height: 11%;
 
+}
+.img_tick {
+	position: absolute;
+	height: 25%;
+	width: 15%;
+	top: 37%;
+	left: 60%;
+	background-image: url('tick.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.img_cross {
+	position: absolute;
+	height: 25%;
+	width: 15%;
+	top: 37%;
+	left: 26%;
+	background-image: url('x.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 }

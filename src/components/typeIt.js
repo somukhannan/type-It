@@ -7,6 +7,12 @@ const actionKeys = {
 };
 
 const typeIt = () => <div>
+	<div>{ context.state.inputString === ''
+		? null
+		: context.state.inputString === context.state.rndmString
+			? <div className="img_tick"/>
+			: <div className="img_cross"/>}
+	</div>
 	<div className="rdnStr">
 		{context.state.rndmString}
 	</div>

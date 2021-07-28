@@ -8,7 +8,6 @@ const App = () =>
 	<div className="App">
 		{ typeIt() }
 		{ console.log(context.state) }
-	</div>
-	;
+	</div>;
 
 export default App;
