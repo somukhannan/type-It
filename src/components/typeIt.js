@@ -8,13 +8,13 @@ const actionKeys = {
 
 const typeIt = () => <div>
 	<div>{ context.state.inputString === ''
-		? null
+		? <div className="note">Start Typing...</div>
 		: context.state.inputString === context.state.rndmString
-			? <div className="img_tick"/>
+			? <div className="img_tick">
+				<span className="enter">Press Enter to Continue</span></div>
 			: <div className="img_cross"/>}
 	</div>
-	<div className="rdnStr">
-		{context.state.rndmString}
+	<div className="rdnStr">{context.state.rndmString}
 	</div>
 	<input
 		className="inpStr"
