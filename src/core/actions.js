@@ -1,11 +1,12 @@
 import { rndString } from '@laufire/utils/random';
 import config from './config';
 
-const setInputString = ({ state, data }) => ({
-	score: state.rndmString === data
-		? state.score + 1
-		: state.score,
+const setInputString = ({ data }) => ({
 	inputString: data,
+});
+
+const updateScore = ({ score }) => ({
+	score,
 });
 
 const setRndString = () => ({
@@ -16,6 +17,7 @@ const setRndString = () => ({
 const actions = {
 	setInputString,
 	setRndString,
+	updateScore,
 };
 
 export default actions;

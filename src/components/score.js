@@ -3,7 +3,7 @@ import context from '../core/context';
 
 const Score = () =>
 	<div className="score">Score :
-		{ context.state.score}
+		{ context.state.score }
 	</div>;
 
 export default Score;
