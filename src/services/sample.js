@@ -1,24 +1,23 @@
-/* eslint-disable no-console */
 import context from '../core/context';
 
-const setInputString = (string) => {
-	context.actions.setInputString(string);
-};
-
-const calScore = (string) => {
+const increaseScore = () => {
 	const score = context.state.score + 1;
 
-	context.actions.updateScore(score);
-	setInputString(string);
+	return score;
 };
 
-const setInputStringAndScore = (string) =>
-	(string.length === context.state.rndmString.length
-		? calScore(string)
-		: setInputString(string));
+const calScore = (str) => {
+	const rdmStr = context.state.rndmString;
+
+	const result = str.length !== rdmStr.length
+		? null
+		: str === rdmStr ? increaseScore()	: null ;
+
+	return result;
+};
 
 const SampleService = {
-	setInputStringAndScore,
+	calScore,
 };
 
 export default SampleService;
