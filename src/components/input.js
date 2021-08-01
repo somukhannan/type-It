@@ -10,7 +10,10 @@ const Input = () =>
 	<input
 		className="inpStr"
 		value={ context.state.inputString }
-		onChange={ (evt) =>	context.actions.setInputStringAndScore(evt.target.value) }
+		onChange={ (evt) =>	{
+			context.actions.setInputString(evt.target.value);
+			context.actions.setScore();
+		} }
 		// eslint-disable-next-line max-len
 		onKeyUp={ (evt) => actionKeys[evt.code] && actionKeys[evt.code]() }
 	/>;

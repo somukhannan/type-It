@@ -2,9 +2,14 @@ import { rndString } from '@laufire/utils/random';
 import config from './config';
 import SampleService from '../services/sample';
 
-const setInputStringAndScore = ({ data }) => ({
+const setInputString = ({ data }) => ({
 	inputString: data,
-	score: SampleService.calScore(data),
+});
+
+const setScore = ({ state }) => ({
+	score: SampleService.checkStr(state.inputString, state.rndmString) === true
+		? state.score + 1
+		: state.score,
 });
 
 const setRndString = () => ({
@@ -13,7 +18,8 @@ const setRndString = () => ({
 });
 
 const actions = {
-	setInputStringAndScore,
+	setInputString,
+	setScore,
 	setRndString,
 };
 
