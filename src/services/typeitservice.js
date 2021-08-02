@@ -1,8 +1,8 @@
 
 const checkStr = (inpStr, rdmStr) => inpStr === rdmStr ;
 
-const SampleService = {
+const typeitservice = {
 	checkStr,
 };
 
-export default SampleService;
+export default typeitservice;
