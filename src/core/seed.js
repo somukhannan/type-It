@@ -9,6 +9,7 @@ const seed = {
 	rndmString: rndString(config.rndmStrLength),
 	score: 0,
 	inputString: '',
+	remainingStr: '',
 };
 
 export default seed;
